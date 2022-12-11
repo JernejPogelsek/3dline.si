@@ -11,9 +11,11 @@
         <nav class="navigation"> 
           <router-link class="menu" to="/">3D line</router-link>
           <router-link class="menu" to="/movingHotend">Moving hotend</router-link>
+          <router-link class="menu" to="/scripts">Scripts</router-link>
           <router-link class="menu" to="/aboutMe">About me</router-link>
           <router-link class="menu" to="/otherProjects">Other projects</router-link>
           <router-link class="menu" to="/help">Help</router-link>
+          <router-link class="menu" to="/robot">Robot</router-link>
         </nav> 
       </div>
       <transition name="router-anim" enter-active-class="animated jello">
