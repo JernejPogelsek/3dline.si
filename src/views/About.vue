@@ -8480,9 +8480,9 @@ export default {
               var file2= zamenjava.replace(".gcode", "");
               var checkbox= document.getElementById("NameFile");
               if(checkbox.checked == true)
-              {
-              document.getElementById("example1").setAttribute('value',file2);
-              }
+                {
+                  document.getElementById("example1").setAttribute('value',file2);
+                }
                 var o = document.getElementById("gcode");
                 var w = document.getElementById("videoTutorial");
                 var e = document.getElementById("slikeTutorial");
@@ -8625,6 +8625,8 @@ export default {
         ctx.moveTo(0, 150);
         ctx.lineWidth = 3;
         ctx.strokeStyle = "#FFFFFF";
+                console.log("CanvasX:"+canvasX)
+        console.log("Canvasy:"+canvasY)
         for (var i = 2; i <= canvasX.length - 2; i++) {
           animacija(i);
         }
