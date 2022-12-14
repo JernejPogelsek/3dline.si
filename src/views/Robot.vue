@@ -262,6 +262,7 @@ izpis: function(){
       this.trenutnaRisba="";
       this.trenutniKorak="";
     },
+    
     Help: function(){
       swal("Help", "1. Generate your text\n\n2. Copy/Download Gcode from website\n\n3. Set costimized line in slicer:\n\nSimplify3D:\n- Open Simplify 3D\n- Open process edit\n- Go to scripts tab\n- Paste generated gcode to starting script textbox\n- Press ok and start print with this process\n\nCura:\n- Open Cura\n- Go to printers\n- Open manage printers\n- Open machine settings\n- Paste generated gcode to start G-code textbox\n- Press close and start print with this printer settings\n\nFor help with video go to help page on menu.");
     },
