@@ -409,7 +409,7 @@ izpis: function(){
       }
     },
   },
-  
+
   mounted() {
     var c = document.getElementById("myCanvas1");
     this.canvas = c.getContext('2d');
@@ -432,6 +432,7 @@ h5{
   border-radius: 20px 20px 0px 0px;
   color: white;
 }
+
 p {
   color: #969696;
   margin-bottom: 0;
