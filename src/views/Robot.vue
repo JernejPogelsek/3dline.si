@@ -279,11 +279,13 @@ izpis: function(){
       ctx2.stroke();
       ctx2.closePath();
     },
+
     beginDrawing(e) {
       this.x1 = e.offsetX;
       this.y1 = e.offsetY;
       this.isDrawing = true;
     },
+
     keepDrawing(e) {
       if (this.isDrawing === true) {
         this.drawLine(this.x1, this.y1, e.offsetX, e.offsetY);
@@ -295,6 +297,7 @@ izpis: function(){
         this.tockey.push((e.offsetY+600)/60)
       }
     },
+
     stopDrawing(e) {
       if (this.isDrawing === true) {
         this.drawLine(this.x1, this.y1, e.offsetX, e.offsetY);
@@ -330,6 +333,7 @@ izpis: function(){
         this.number1=this.number1+1
       }
     },
+
     drawLine1(x1, y1, x2, y2) {
       let ctx2 = this.canvas;
       ctx2.beginPath();
@@ -340,6 +344,7 @@ izpis: function(){
       ctx2.stroke();
       ctx2.closePath();
     },
+
     beginDrawing1(e) {
       var c = document.getElementById("myCanvas1");
       this.canvas = c.getContext('2d');
@@ -349,6 +354,7 @@ izpis: function(){
       this.y1 = ee.clientY - rect.top;
       this.isDrawing = true;
     },
+
     keepDrawing1(e) {
     var c = document.getElementById("myCanvas1");
     this.canvas = c.getContext('2d');
@@ -364,6 +370,7 @@ izpis: function(){
         this.tockey.push(((ee.clientY-rect.top)+600)/60)
       }
     },
+
     stopDrawing1(e) {
       var c = document.getElementById("myCanvas1");
       this.canvas = c.getContext('2d');
@@ -402,6 +409,7 @@ izpis: function(){
       }
     },
   },
+  
   mounted() {
     var c = document.getElementById("myCanvas1");
     this.canvas = c.getContext('2d');
