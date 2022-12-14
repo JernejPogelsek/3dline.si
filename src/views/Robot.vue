@@ -268,7 +268,6 @@ izpis: function(){
     Question: function(){
       swal("Start script", "If you have default start script, leave the number 0.\n\nSimplify3D:\n- Open Simplify 3D\n- Open process edit\n- Go to scripts tab\n- Count lines on start scripts tab\n\nCura:\n- Open Cura\n- Go to printers\n- Open manage printers\n- Open machine settings\n- Count lines on start scripts tab\n\nPrusaSlicer:\n- Open PrusaSlicer\n- Go to printer settings\n- Select expret settings\n- Go to custom G-code\n- Count lines on start gcode tab");
     },
-
     drawLine(x1, y1, x2, y2) {
       let ctx2 = this.canvas;
       ctx2.beginPath();
@@ -279,13 +278,11 @@ izpis: function(){
       ctx2.stroke();
       ctx2.closePath();
     },
-
     beginDrawing(e) {
       this.x1 = e.offsetX;
       this.y1 = e.offsetY;
       this.isDrawing = true;
     },
-
     keepDrawing(e) {
       if (this.isDrawing === true) {
         this.drawLine(this.x1, this.y1, e.offsetX, e.offsetY);
@@ -297,7 +294,6 @@ izpis: function(){
         this.tockey.push((e.offsetY+600)/60)
       }
     },
-
     stopDrawing(e) {
       if (this.isDrawing === true) {
         this.drawLine(this.x1, this.y1, e.offsetX, e.offsetY);
@@ -333,7 +329,6 @@ izpis: function(){
         this.number1=this.number1+1
       }
     },
-
     drawLine1(x1, y1, x2, y2) {
       let ctx2 = this.canvas;
       ctx2.beginPath();
@@ -344,7 +339,6 @@ izpis: function(){
       ctx2.stroke();
       ctx2.closePath();
     },
-
     beginDrawing1(e) {
       var c = document.getElementById("myCanvas1");
       this.canvas = c.getContext('2d');
@@ -354,7 +348,6 @@ izpis: function(){
       this.y1 = ee.clientY - rect.top;
       this.isDrawing = true;
     },
-
     keepDrawing1(e) {
     var c = document.getElementById("myCanvas1");
     this.canvas = c.getContext('2d');
@@ -370,7 +363,6 @@ izpis: function(){
         this.tockey.push(((ee.clientY-rect.top)+600)/60)
       }
     },
-
     stopDrawing1(e) {
       var c = document.getElementById("myCanvas1");
       this.canvas = c.getContext('2d');
@@ -432,7 +424,6 @@ h5{
   border-radius: 20px 20px 0px 0px;
   color: white;
 }
-
 p {
   color: #969696;
   margin-bottom: 0;
